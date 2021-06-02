@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Word of the tab</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background: #d6d6d6;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .container {
+                text-align: center;
+                color: rgb(29, 28, 28);
+            }
+            .container * {
+                padding: 15px 0;
+            }
+
+            h1 {
+                font-size: 4.6rem;
+            }
+            p {
+                font-size: 2rem;
+            }
+            #pronunciation {
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="word"></h1>
+            <p id="definition"></p>
+            <p id="pronunciation"></p>
+        </div>
+        <script src="./content.js"></script>
+    </body>
+</html>
